@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    margin-top: 20px;
+    color: white;
+}
+.banner{
+    background: url(Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 110vh;
+    position: absolute;
+    top: 0%;
+}
+.nav-head{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.land-head{
+    margin-left: 15%;
+}
+.land-head h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    text-align: start;
+    margin-top: 250px;
+    color: white;
+}
+.btn-log{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-right: 10%;
+}
+.btn-log:hover{
+    color: white;
+    background: black;
+}
+
+.pop-btn{
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 50%  50% 0% 50%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    cursor: pointer;
+}
+#pop-btn2{
+    display: none;
+}
+.bird{
+    width: 30px;
+    height: 30px;
+}
+.pop-btn:hover{
+    background: white;
+}
+#close{
+    font-size: 30px;
+    text-align: center;
+}
+.chat-box{
+    max-width: 400px;
+    min-height: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    position: fixed;
+    bottom: 150px;
+    right: 45px;
+    display: none;
+}
+.chat-head{
+    width: 100%;
+    min-height: 80px;
+    border-radius: 10px;
+    background: #7f8ac5;
+    padding: 15px 25px 15px 25px;
+}
+.head1{
+    color: white;
+    font-size: 25px;
+}
+.para{
+    color: #f1f1f1;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.chat-body{
+    padding: 15px 25px 15px 25px;
+}
+.para1{
+    font-weight: bold;
+}
+.para2{
+    color: rgb(83, 81, 81);
+    margin-top: -12px;
+}
+.send-btn{
+    padding: 5px 30px;
+    padding-left: 10px;
+    background: #13a884;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.send-btn i{
+    color: white;
+    font-size: 12px;
+    transform: rotate(50deg);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+.send-btn:hover{
+    background: #18c29a;
+}
+.chat-body2{
+    padding: 15px 25px 15px 25px;
+    position: relative;
+    display: none;
+}
+.chat1{
+   font-size: 12px;
+   display: inline-block;
+   padding: 10px  25px 10px 15px;
+   background: #4c5aa1;
+   color: white;
+   border-radius: 10px 35px 0px 10px;
+   float: right;
+}
+.chat2{
+   margin-top: 25px;
+   font-size: 12px;
+   display: inline-block;
+   padding:10px 15px 10px 35px;
+   background: #ecf1fb;
+   border-radius: 25px 10px 10px 0px;
+   margin-left: 25px;
+}
+.chat2::before{
+    content: " ";
+    display: table;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4c5aa1;
+    margin-left: 10px;
+    position: absolute;
+    left: 0%;
+}
+.type-sec{
+    margin-top: 60px;
+}
+.inp{
+    padding: 5px 20px 0px 20px; 
+}
+.inp input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.inp i{
+    font-size: 13px;
+    color: #7f8ac5;
+    transform: rotate(50deg);
+    float: right;
+    cursor: pointer;
+}
+/*responsive code*/
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .banner{
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 1018px) {
+    .banner{
+        background-position-x: center;
+        background-size: auto;
+        width: 100%;
+        height: auto;
+        
+    }
+    .land-head{
+        margin-top: 255px;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .pop-btn{
+      right: 20px;
+      bottom: 170px;
+  }
+  .chat-box{
+      right: 20px;
+      bottom: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+    .land-head h2{
+        font-size: 60px;
+        line-height: 80px;
+    }
+   
+   
+    .collapse{
+        margin-top: 10px;
+        background: rgb(81, 96, 97);
+        border-radius: 20px;
+        padding: 20px 0px;
+        margin-right: 60%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .land-head h2{
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: -70px;
+       
+    }
+   
+}
+@media screen and (max-width: 380px) {
+    .collapse{
+        margin-right: 50%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .pop-btn{
+        right: 10px;
+        bottom: 10px;
+    }
+    .chat-box{
+        right: 10px;
+        bottom: 80px;
+    }
+}
